@@ -1,5 +1,5 @@
 
-let myLeads = [];
+let myLeads = ['awesomelead', 'epiclead', 'greatlead'];
 const inputEl = document.getElementById('input-el');
 let ulEl = document.getElementById('ul-el');
 
@@ -11,5 +11,5 @@ inputBtn.addEventListener("click", function() {
 
 
 for (let i = 0; i < myLeads.length; i++) {
-    console.log(myLeads[i]);
+    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
 }
